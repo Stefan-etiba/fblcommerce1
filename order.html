@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Order Details – Family Bank eShop</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+
+    .order-wrapper {
+      max-width: 900px;
+      margin: 3rem auto;
+      background: #fff;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.08);
+    }
+
+    .section-header {
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: #0d6efd;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .item-row {
+      border-bottom: 1px solid #e0e0e0;
+      padding: 1rem 0;
+    }
+
+    .item-img {
+      max-width: 80px;
+      max-height: 80px;
+      object-fit: contain;
+    }
+
+    .status {
+      padding: 4px 10px;
+      border-radius: 6px;
+      font-size: 0.85rem;
+    }
+
+    .status.completed {
+      background-color: #d1e7dd;
+      color: #0f5132;
+    }
+
+    .status.pending {
+      background-color: #fff3cd;
+      color: #664d03;
+    }
+
+    .summary-box {
+      background-color: #f1f1f1;
+      padding: 1rem;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="order-wrapper">
+      <h3 class="text-center text-primary mb-4">🧾 Order Details</h3>
+
+      <!-- Order Info -->
+      <div class="row">
+        <div class="col-md-6">
+          <p><strong>Order Number:</strong> ORD-00123</p>
+          <p><strong>Order Date:</strong> 2025-06-20</p>
+        </div>
+        <div class="col-md-6 text-md-end">
+          <p><strong>Status:</strong> <span class="status completed">Completed</span></p>
+        </div>
+      </div>
+
+      <!-- Shipping Details -->
+      <div class="section-header">📦 Shipping Details</div>
+      <p><strong>Name:</strong> Stefan Muya</p>
+      <p><strong>Email:</strong> snmuya@familybank.co.ke</p>
+      <p><strong>Phone:</strong> 0722000000</p>
+      <p><strong>Branch:</strong> Head Office - Nairobi</p>
+
+      <!-- Items List -->
+      <div class="section-header">🛍️ Ordered Items</div>
+      <div class="item-row d-flex align-items-center">
+        <img src="https://m.media-amazon.com/images/I/81w6q5moodL._AC_SL1500_.jpg" class="item-img me-3" />
+        <div>
+          <p class="mb-1"><strong>Notebook Pack</strong></p>
+          <p class="mb-0 text-muted">Qty: 2 × KES 1,200</p>
+        </div>
+        <div class="ms-auto text-end"><strong>KES 2,400</strong></div>
+      </div>
+      <div class="item-row d-flex align-items-center">
+        <img src="https://store.shufflepcs.co.ke/cdn/shop/files/fgdfghhgfshjgfj.jpg?v=1720170495&width=493" class="item-img me-3" />
+        <div>
+          <p class="mb-1"><strong>Wireless Mouse</strong></p>
+          <p class="mb-0 text-muted">Qty: 1 × KES 1,800</p>
+        </div>
+        <div class="ms-auto text-end"><strong>KES 1,800</strong></div>
+      </div>
+
+      <!-- Total Summary -->
+      <div class="section-header">💵 Payment Summary</div>
+      <div class="summary-box">
+        <div class="d-flex justify-content-between">
+          <span>Subtotal</span>
+          <span>KES 4,200</span>
+        </div>
+        <div class="d-flex justify-content-between">
+          <span>Shipping</span>
+          <span>KES 0</span>
+        </div>
+        <hr />
+        <div class="d-flex justify-content-between fw-bold">
+          <span>Total</span>
+          <span>KES 4,200</span>
+        </div>
+      </div>
+
+      <div class="text-end mt-4">
+        <a href="order-history.html" class="btn btn-secondary">← Back to Order History</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
